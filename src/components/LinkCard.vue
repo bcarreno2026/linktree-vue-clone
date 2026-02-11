@@ -1,15 +1,20 @@
 <template>
   <a 
-  href="#" target="_blank" 
+  href="#" 
+  target="_blank" 
   rel="noopener noreferrer"
-  class="flex w-full items-center gap-4 rounded-xl border border-gray-700 bg-gr-800 p-4 shadow-md shadow-gray-900/50 hover:scale-[1.02] hover:shadow-xl transition-all duration-300 hover:border-green-600 hover:shadow-green-500/20"
+  class="relative group flex w-full items-center gap-4 rounded-xl border border-gray-700 bg-gr-800 p-4 shadow-md shadow-gray-900/50 hover:scale-[1.02] hover:shadow-xl transition-all duration-300 hover:border-green-600 hover:shadow-green-500/20"
   >
+
   <!-- Icon Container -->
-    <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gray-700 text-green-400">
-      <svg viewBox="0 0 24 24" 
+    <div 
+    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gray-700 text-green-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-green-500 group-hover:text-white group-hover:shadow-xl group-hover:shadow-green-500/20"
+    >
+      <svg 
+      viewBox="0 0 24 24" 
       fill="none" 
       stroke=" currentColor" 
-      class="h-6 w-6">
+      class="h-6 w-6 transition-transform duration-300 group-hover:rotate-6">
 
       <path 
       stroke-linecap="round"
@@ -26,5 +31,8 @@
         This is a text area.
       </p>
      </div>
+
+     <!-- Hover Glow Effect -->
+      <div class="absolute inset-0 rounded-xl bg-linear-to-r from-green-500/0 via-green-500/10 to-green-500/0 opacity-0 transition-opacity-100"/>
   </a>
   </template>
