@@ -44,7 +44,7 @@ const bio = ref({
        <!-- About Section -->
         <div class="mb-6">
           <h2 class="mb-3 text-lg font-semibold text-white">About</h2>
-          <p class="leading-relaxed text-grey-300">{{ bio.about }}</p>
+          <p class="leading-relaxed text-red-200/50">{{ bio.about }}</p>
         </div>
 
         <!-- Skills Section -->
