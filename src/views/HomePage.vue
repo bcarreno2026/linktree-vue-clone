@@ -5,8 +5,36 @@ import LinkCard from '@/components/LinkCard.vue'
 const profile = ref({
   name: 'Braulio Carreno',
   slogan: 'Intro to Full Stack Developer and Student',
-  // Make sure this is ONLY the text inside quotes!
-  avatar: 'https://api.dicebear.com/9.x/adventurer-neutral/svg?seed=Braulio'
+  avatar: 
+  'https://api.dicebear.com/9.x/adventurer-neutral/svg?seed=Braulio',
+  links: [
+    {
+      id:1,
+      title: 'GitHub',
+      url: 'https://github.com/bcarreno2026',
+      icon: 'code',
+      description: 'Check out my projects',
+    },
+
+    {
+      id:2,
+      title: 'Linkedin',
+      url: 'https://www.linkedin.com/in/braulio-carreno-176128220/',
+      icon: 'briefcase',
+      description: 'Connect with me professionally',
+    },
+    {
+      id: 3,
+      title: 'Expense Divider (Future Projects)',
+      url: '',
+      icon: 'folder', 
+      isFuture: true,
+      futureLinks: [
+        { name: 'expense-splitter-vue', url: 'https://expense-splitter-vue.expense-splitter-vue-123.workers.dev' },
+        { name: 'expenses-html', url: 'https://expenses-html-51k.pages.dev' },
+      ],
+    }
+  ]
 
 })
 
@@ -31,7 +59,16 @@ const profile = ref({
      <!-- Link List-->
       <div class="flex w-full max-w-md flex-col gap-4">
 
-        <LinkCard v-for="x of [1,2,3]" :key="x"/>
+        <LinkCard 
+        v-for="link in profile.links" 
+        :key="link.id"
+        :title="link.title"
+        :url="link.url"
+        :description="link.description"
+        :icon="link.icon"
+        :isFuture="link.isFuture"
+        :futureLinks="link.futureLinks"
+        />
       </div>
 
       <!-- Navigate to Info -->

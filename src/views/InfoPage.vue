@@ -5,7 +5,7 @@ const bio = ref({
   name: 'Braulio Carreno',
   avatar: 'https://api.dicebear.com/9.x/adventurer-neutral/svg?seed=Braulio',
   about: `I'm a student at STC who is learning how to build web applications my understanding is getting better and i enjoy working on the features and putting everything together.`,
-  skills: ['Vue.js', 'React', 'Typescript', 'Node.js', 'Tailwind CSS'],
+  skills: ['Vue.js', 'Tailwind CSS', 'JavaScript (ES6+)', 'Git/GitHub', 'Responsive Design'],
   email: 'bcarreno@stu.southtexascollege.edu',
   location: 'Harlingen, Tx',
 
@@ -44,7 +44,7 @@ const bio = ref({
        <!-- About Section -->
         <div class="mb-6">
           <h2 class="mb-3 text-lg font-semibold text-white">About</h2>
-          <p class="leading-relaxed text-red-200/50">{{ bio.about }}</p>
+          <p class="leading-relaxed text-gray-200/50">{{ bio.about }}</p>
         </div>
 
         <!-- Skills Section -->
