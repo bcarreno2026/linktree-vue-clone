@@ -23,13 +23,6 @@ const profile = ref({
       description: 'Connect with me professionally',
     },
     {
-      id: 4,
-      title: 'Anime Roulette Machine',
-      url: 'https://anime-roulette-machine.pages.dev',
-      icon: 'play',
-      description: 'Spin to find your next anime!',
-    },
-    {
       id: 3,
       title: 'Expense Divider (Future Projects)',
       url: '',
@@ -38,11 +31,13 @@ const profile = ref({
       futureLinks: [
         { name: 'expense-splitter-vue', url: 'https://expense-splitter-vue.expense-splitter-vue-123.workers.dev' },
         { name: 'expenses-html', url: 'https://expenses-html-51k.pages.dev' },
+        { name: 'Anime Roulette Machine', url: 'https://anime-roulette-machine.pages.dev' }
       ],
     }
-  ]
-})
+  ] // Closes the links array
+}) // Closes the ref()
 </script>
+
 
 
 <template>
