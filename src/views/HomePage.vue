@@ -9,19 +9,25 @@ const profile = ref({
   'https://api.dicebear.com/9.x/adventurer-neutral/svg?seed=Braulio',
   links: [
     {
-      id:1,
+      id: 1,
       title: 'GitHub',
       url: 'https://github.com/bcarreno2026',
       icon: 'code',
       description: 'Check out my projects',
     },
-
     {
-      id:2,
+      id: 2,
       title: 'Linkedin',
       url: 'https://www.linkedin.com/in/braulio-carreno-176128220/',
       icon: 'briefcase',
       description: 'Connect with me professionally',
+    },
+    {
+      id: 4,
+      title: 'Anime Roulette Machine',
+      url: 'https://anime-roulette-machine.pages.dev',
+      icon: 'play',
+      description: 'Spin to find your next anime!',
     },
     {
       id: 3,
@@ -32,21 +38,12 @@ const profile = ref({
       futureLinks: [
         { name: 'expense-splitter-vue', url: 'https://expense-splitter-vue.expense-splitter-vue-123.workers.dev' },
         { name: 'expenses-html', url: 'https://expenses-html-51k.pages.dev' },
-    {
-      id: 4,
-      title: 'Anime Roulette Machine',
-      url: 'https://anime-roulette-machine.pages.dev',
-      icon: 'play', // or 'gamepad' depending on your icon set
-      description: 'Spin to find your next anime!',
-},
-
       ],
     }
   ]
-
 })
-
 </script>
+
 
 <template>
   <main class="flex min-h-screen flex-col items-center px-4 py-8">
