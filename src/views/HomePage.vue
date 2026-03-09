@@ -31,7 +31,7 @@ const profile = ref({
       futureLinks: [
         { name: 'expense-splitter-vue', url: 'https://expense-splitter-vue.expense-splitter-vue-123.workers.dev' },
         { name: 'expenses-html', url: 'https://expenses-html-51k.pages.dev' },
-        { name: 'Anime Roulette Machine', url: 'https://anime-roulette-machine.pages.dev' }
+        { name: 'Anime Roulette Machine', url: 'https://anime-roulette-machine.expense-splitter-vue-123.workers.dev' }
       ],
     }
   ] // Closes the links array
